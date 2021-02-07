@@ -1,0 +1,23 @@
+ // 下载图片保存网盘
+        List<InputStream> imgAddrStream;
+        if (WeChatConstants.ROLE_APPLICANT.equals(role)) {
+            SystemLogUtils.info("【当前保单号[{}]证件信息处理】当前角色[{}]", policyNo, role);
+            // 当前用户
+            imgAddrStream = beneficiarySaveShareNetDisk(policyNo, idCardTypeId, WeChatConstants.ROLE_APPLICANT,
+                    documentsDto, ids, remoteUrl, null);
+            if (CollectionUtils.isNotEmpty(imgAddrStream)) {
+                // 当前用户的被保险人
+                String papersType = documentsDto.getPapersType();
+                List<InputStream> imgs = beneficiarySaveShareNetDisk(policyNo, papersType, WeChatConstants.ROLE_INSURED,
+                        documentsDto, ids,  remoteUrl, null);
+                if (CollectionUtils.isEmpty(imgs)) {
+                    imgAddrStream = new LinkedList<>();
+                } else {
+                    imgAddrStream.addAll(imgs);
+                }
+            }
+        }
+            SystemLogUtils.info("【当前保单号[{}]证件信息处理】当前角色[{}]", policyNo, role);
+            // 当前投被保人
+            imgAddrStream = beneficiarySaveShareNetDisk(policyNo, idCardTypeId, WeChatConstants.ROLE_INSURED,
+                    documentsDto, ids, remoteUrl, null);

@@ -1,0 +1,1 @@
+package com.example.demo1;/** * 1. * * @author 易富军 */public interface d1 {}

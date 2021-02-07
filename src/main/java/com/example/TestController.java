@@ -1,0 +1,1 @@
+package com.example;import org.springframework.stereotype.Controller;/** * 测试. * * @author 易富军 */@Controllerpublic class TestController {    /**     * 测试.     *      * @return String     */    public String text() {               return "text";    }}
