@@ -1,0 +1,1 @@
+package com.yifu.workdemo.controller;import org.springframework.stereotype.Controller;import org.springframework.web.bind.annotation.RequestMapping;/** * 测试. * * @author 易富军 */@Controllerpublic class TextController {            @RequestMapping("/helloWord")    public String helloWord() {        return "404";    }    }
