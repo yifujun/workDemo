@@ -1,0 +1,1 @@
+package com.example.service;import com.example.result.BaseResponse;/** * 多继承. * * @author 易富军 */public interface inheritance {    /**     * 多继承     * @param str  str     * @return     */    String demos(String str);}

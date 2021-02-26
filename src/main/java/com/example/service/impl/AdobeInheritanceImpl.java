@@ -1,0 +1,1 @@
+package com.example.service.impl;import com.example.service.inheritance;import org.springframework.stereotype.Service;/** * 多继承. * * @author 易富军 */@Service("adobeInheritanceImpl")public class AdobeInheritanceImpl implements inheritance {        @Override    public String demos(String str) {        return "adobe";    }}
