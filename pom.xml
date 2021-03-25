@@ -117,7 +117,35 @@
             <artifactId>fastjson</artifactId>
             <version>1.2.60</version>
         </dependency>
+
+        <!-- spring 面向切面 -->
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-aspects</artifactId>
+            <version>4.2.6.RELEASE</version>
+        </dependency>
         
+        <!--  swagger2 -->
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger2</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>io.springfox</groupId>
+            <artifactId>springfox-swagger-ui</artifactId>
+            <version>2.8.0</version>
+        </dependency>
+
+        <!-- MYSQL依赖-->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <scope>runtime</scope>
+        </dependency>
+        
+        
+        <!-- mybatis依赖 -->
     </dependencies>
 
     <build>
