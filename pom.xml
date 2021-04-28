@@ -143,7 +143,13 @@
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
         </dependency>
-        
+
+        <!--redis 分布式锁-->
+        <dependency>
+           <groupId>org.redisson</groupId>
+           <artifactId>redisson</artifactId>
+           <version>3.11.1</version>
+        </dependency>
         
         <!-- mybatis依赖 -->
     </dependencies>

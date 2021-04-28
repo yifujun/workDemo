@@ -1,0 +1,1 @@
+package com.example.util;import org.junit.Test;/** * 异常测试类. * * @author 易富军 */public class ErrorDemo {        @Test    public void text() {        String str = "易";        int i = Integer.parseInt(str);        System.out.format("i：%",i);        System.out.println("看你运行嘛");    }}
