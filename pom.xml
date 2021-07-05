@@ -150,8 +150,15 @@
            <artifactId>redisson</artifactId>
            <version>3.11.1</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.owasp.esapi/esapi -->
+        <!-- 安全方面 -->
+        <dependency>
+            <groupId>org.owasp.esapi</groupId>
+            <artifactId>esapi</artifactId>
+            <version>2.1.0.1</version>
+        </dependency>
         
-        <!-- mybatis依赖 -->
     </dependencies>
 
     <build>
